@@ -119,7 +119,6 @@ export const gsapAnimation = {
 			trigger: item,
 			start:()=>"top-=100 center",
 			end: () => "bottom+=600 center",
-			markers:true,
 
 			animation: gsap.to(item, {
 				y: 0,

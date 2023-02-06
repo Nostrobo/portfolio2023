@@ -63,7 +63,6 @@ export default function About() {
         gsapAnimation.aboutdisplayAnimation(displayInfodescriptionRef.current, .2)
     }
 
-
     useEffect(() => {
         setDefaultCategory()
     }, [])
