@@ -1,0 +1,116 @@
+.contact {
+    margin-top: 30rem;
+    padding-top: 5rem;
+    height: var(--heigth-without-header);
+    display: flex;
+    gap: 64px;
+    color: white;
+
+    div {
+        flex-basis: 50%;
+    }
+
+    .contactLeft {
+        background-color: black;
+        padding: 1rem 2rem;
+
+        form {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h3 {
+                letter-spacing: -2px;
+                margin-bottom: 1rem;
+            }
+
+            .formInputContainer {
+                flex-basis: 100%;
+                input {
+                    transition: .2s;
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid white;
+                    width: 100%;
+                    font-size: 1rem;
+                    font-weight: 300;
+                    padding: .5rem 0;
+                    outline: none;
+                    color:white;
+                    &:focus{
+                        background-color: white;
+                        color:black;
+                    }
+
+                }
+                textarea {
+                    transition: .2s;
+
+                    background-color: transparent;
+                    border: none;
+                    flex-basis: 100%;
+                    border: none;
+                    border-bottom: 1px solid white;
+                    width: 100%;
+                    font-size: 1rem;
+                    font-weight: 300;
+                    padding: .5rem 0;
+                    color:white;
+                    outline: none;
+                    
+
+                    &:focus{
+                        background-color: white;
+                        color:black;
+
+                    }
+
+                }
+            }
+            button {
+                transition: .2s;
+
+                text-align: right;
+                width: 40%;
+                white-space: nowrap;
+                background-color: transparent;
+                color: white;
+                border: 1px solid white;
+                align-self: flex-end;
+                padding: 0.5rem;
+                &:hover{
+                    background-color: white;
+                    color:black; 
+                }
+            }
+        }
+    }
+    .contactRight {
+        flex-basis: 50%;
+        height: 100%;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-size: var(--title-font-size);
+            white-space: nowrap;
+        }
+        p {
+            margin-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            font-weight: 300;
+            strong {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+

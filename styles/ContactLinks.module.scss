@@ -1,0 +1,23 @@
+.contactLinks {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    gap: 16px;
+
+    a {
+        :hover {
+            fill: rgb(209, 10, 10);
+        }
+        svg {
+            width: 1.2rem;
+            fill: white;
+            transition: 0.2s;
+        }
+    } 
+    a:last-child {
+        :hover {
+            color: rgb(209, 10, 10);
+        }
+    }
+}

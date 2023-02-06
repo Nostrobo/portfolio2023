@@ -1,0 +1,19 @@
+.experienceContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 128px;
+    h3 {
+        font-size: var(--title-font-size);
+        line-height: 5rem;
+        margin-bottom: 2rem;
+        white-space: pre-line;
+
+    }
+    p{
+        white-space: pre-line;
+    }
+    img {
+        width: 40%;
+        height: 40%;
+    }
+}

@@ -1,0 +1,16 @@
+.wordContainer {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+
+    span {
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        display: inline-block;
+        transform: translateY(150px);
+    }
+}

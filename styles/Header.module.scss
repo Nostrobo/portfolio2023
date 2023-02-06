@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1rem 4rem;
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+
+    .headerName {
+        h1 {
+            letter-spacing: -2px;
+        }
+    }
+
+    .nav {
+        .navul {
+            display: flex;
+            justify-content: space-between;
+            gap: 3rem;
+        }
+    }
+}
