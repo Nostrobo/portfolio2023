@@ -19,7 +19,7 @@ const ExperienceArticle: React.FC<{ title: string, description: string, image: a
             gsapAnimation.imageFadeIn(imgExperienceRef.current, imgExperienceRef.current )
         }
         if (descriptionExperienceRef.current && imgExperienceRef.current) {
-            gsapAnimation.imageFadeIn(descriptionExperienceRef.current, imgExperienceRef.current)
+            gsapAnimation.descriptionFadeIn(descriptionExperienceRef.current, imgExperienceRef.current)
         }
     }, [])
     return (

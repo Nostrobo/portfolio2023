@@ -23,8 +23,15 @@ export default function Contact() {
         setMailerState((prev) => ({ ...prev, [e.target.name]: e.target.value }))
     }
 
-    const sendMail = () => {
-        console.log('sendmail')
+    const sendMail = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault()
+        const response: any = await fetch('http://localhost:3001/send', {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json',
+            },
+            body: JSON.stringify({ mailerState }),
+        })
     }
     return (
         <section id="contact" className={styles.contact} {...gsapAttr}>
@@ -76,8 +83,8 @@ export default function Contact() {
                     <WordSplitter text="Get in touch" />
                 </h2>
                 <p>
-                    <WordSplitter text="Designed and Developped by"  />
-                    <strong><WordSplitter text="Heddy AMARA" delay={1}/></strong>
+                    <WordSplitter text="Designed and Developped by" />
+                    <strong><WordSplitter text="Heddy AMARA" delay={1} /></strong>
                     <WordSplitter text=" amara.heddy.pro@gmail.com" delay={1.5} />
                 </p>
                 <ContactLinks />
@@ -85,3 +92,4 @@ export default function Contact() {
         </section>
     )
 }
+

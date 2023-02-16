@@ -14,6 +14,7 @@ export const gsapAnimation = {
 		sections.forEach((section, idx) => {
 			ScrollTrigger.create({
 				trigger: section,
+				markers:true,
 				animation: gsap.to(item, {
 					backgroundColor: colors[idx],
 					immediateRender: false,
@@ -154,10 +155,28 @@ export const gsapAnimation = {
 			trigger: trigger,
 			start:"top center+=150",
 			end: () => "bottom+=600 center",
-
 			animation: gsap.to(item, {
 				y: 0,
 				opacity:1
+				
+			}),
+			toggleActions: "play reverse play reverse",
+		})
+	},
+	descriptionFadeIn : (item: HTMLElement, trigger:HTMLElement) =>{
+		gsap.set(item, {
+			y: 200,
+			opacity:0
+		})
+
+		ScrollTrigger.create({
+			trigger: trigger,
+			start:"top center+=150",
+			end: () => "bottom+=600 center",
+			animation: gsap.to(item, {
+				y: 0,
+				opacity:1
+				
 			}),
 			toggleActions: "play reverse play reverse",
 		})
