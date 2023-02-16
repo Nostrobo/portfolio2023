@@ -14,7 +14,6 @@ export const gsapAnimation = {
 		sections.forEach((section, idx) => {
 			ScrollTrigger.create({
 				trigger: section,
-				markers:true,
 				animation: gsap.to(item, {
 					backgroundColor: colors[idx],
 					immediateRender: false,
