@@ -159,7 +159,7 @@ export const gsapAnimation = {
 				opacity:1
 				
 			}),
-			toggleActions: "play reverse play reverse",
+			toggleActions: "play none none none",
 		})
 	},
 	descriptionFadeIn : (item: HTMLElement, trigger:HTMLElement) =>{
@@ -177,7 +177,7 @@ export const gsapAnimation = {
 				opacity:1
 				
 			}),
-			toggleActions: "play reverse play reverse",
+			toggleActions: "play none none none",
 		})
 	},
 
